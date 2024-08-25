@@ -1,6 +1,6 @@
 recursive-include gau2grid *.py
 
-include setup.py
+include pyproject.toml
 include README.md
 include LICENSE
 include MANIFEST.in
