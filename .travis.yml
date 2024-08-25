@@ -122,7 +122,7 @@ before_script:
 
 script:
   - export GAU2GRID_FORCE_C_TEST=1
-  - export SPDIR=`python -c 'from distutils import sysconfig as s; print(s.get_python_lib(plat_specific=True))'`
+  - export SPDIR=`python -c 'import sysconfig as s; print(s.get_python_lib(plat_specific=True))'`
   - pytest -rws -v --durations=5 --cov=${SPDIR}/gau2grid/ --pyargs gau2grid
 
 notifications:

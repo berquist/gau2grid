@@ -3,7 +3,6 @@ Compare the generated C code against the NumPy reference code.
 """
 
 import os
-import sys
 import time
 
 import numpy as np
